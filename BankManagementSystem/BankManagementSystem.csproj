@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AB214D3E-3BEB-47C2-9861-E4FF9F5E8199}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BankManagementSystem</RootNamespace>
+    <AssemblyName>BankManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="metroframework">
+      <HintPath>D:\Software\S F C S\Microsoft Visual Studio Ultimate 2013 en-US x86 Nov8-2013\metroTool\metroframework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="accountType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="accountType.Designer.cs">
+      <DependentUpon>accountType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changePassword.Designer.cs">
+      <DependentUpon>changePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="credit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="credit.Designer.cs">
+      <DependentUpon>credit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerAccountViewForAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerAccountViewForAdmin.Designer.cs">
+      <DependentUpon>customerAccountViewForAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerMenu.Designer.cs">
+      <DependentUpon>customerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerPasswordChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerPasswordChange.Designer.cs">
+      <DependentUpon>customerPasswordChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerTransactionForAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerTransactionForAdmin.Designer.cs">
+      <DependentUpon>CustomerTransactionForAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer\addCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer\addCustomer.Designer.cs">
+      <DependentUpon>addCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="depositCalculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="depositCalculator.Designer.cs">
+      <DependentUpon>depositCalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="email.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="email.Designer.cs">
+      <DependentUpon>email.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employeeMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employeeMainForm.Designer.cs">
+      <DependentUpon>employeeMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee\employeeSalarybyPossition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee\employeeSalarybyPossition.Designer.cs">
+      <DependentUpon>employeeSalarybyPossition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee\employePosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee\employePosition.Designer.cs">
+      <DependentUpon>employePosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee\employeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee\employeView.Designer.cs">
+      <DependentUpon>employeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee\empSalaryUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee\empSalaryUpdate.Designer.cs">
+      <DependentUpon>empSalaryUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer\modifyCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer\modifyCustomer.Designer.cs">
+      <DependentUpon>modifyCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loanCalculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loanCalculator.Designer.cs">
+      <DependentUpon>loanCalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee\salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee\salary.Designer.cs">
+      <DependentUpon>salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee\employeBonus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee\employeBonus.Designer.cs">
+      <DependentUpon>employeBonus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee\employeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee\employeInfo.Designer.cs">
+      <DependentUpon>employeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee\employeInfo2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee\employeInfo2.Designer.cs">
+      <DependentUpon>employeInfo2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee\employeSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee\employeSalary.Designer.cs">
+      <DependentUpon>employeSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee\employeSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee\employeSearch.Designer.cs">
+      <DependentUpon>employeSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee\employeUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee\employeUpdate.Designer.cs">
+      <DependentUpon>employeUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="password.Designer.cs">
+      <DependentUpon>password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="customer\transaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer\transaction.Designer.cs">
+      <DependentUpon>transaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer\viewCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer\viewCustomer.Designer.cs">
+      <DependentUpon>viewCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer\viewCustomerAcc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer\viewCustomerAcc.Designer.cs">
+      <DependentUpon>viewCustomerAcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee\viewemployeeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee\viewemployeeInfo.Designer.cs">
+      <DependentUpon>viewemployeeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="publicMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="publicMainForm.Designer.cs">
+      <DependentUpon>publicMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewCustomerTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewCustomerTransaction.Designer.cs">
+      <DependentUpon>viewCustomerTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="testForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testForm.Designer.cs">
+      <DependentUpon>testForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer\viewCustomerProfileForCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer\viewCustomerProfileForCustomer.Designer.cs">
+      <DependentUpon>viewCustomerProfileForCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer\updateCustomerAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer\updateCustomerAccount.Designer.cs">
+      <DependentUpon>updateCustomerAccount.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="accountType.resx">
+      <DependentUpon>accountType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changePassword.resx">
+      <DependentUpon>changePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="credit.resx">
+      <DependentUpon>credit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerAccountViewForAdmin.resx">
+      <DependentUpon>customerAccountViewForAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerMenu.resx">
+      <DependentUpon>customerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerPasswordChange.resx">
+      <DependentUpon>customerPasswordChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerTransactionForAdmin.resx">
+      <DependentUpon>CustomerTransactionForAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer\addCustomer.resx">
+      <DependentUpon>addCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="depositCalculator.resx">
+      <DependentUpon>depositCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="email.resx">
+      <DependentUpon>email.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employeeMainForm.resx">
+      <DependentUpon>employeeMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee\employeBonus.resx">
+      <DependentUpon>employeBonus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee\employeeSalarybyPossition.resx">
+      <DependentUpon>employeeSalarybyPossition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee\employeInfo.resx">
+      <DependentUpon>employeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee\employeInfo2.resx">
+      <DependentUpon>employeInfo2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee\employePosition.resx">
+      <DependentUpon>employePosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee\employeSalary.resx">
+      <DependentUpon>employeSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee\employeSearch.resx">
+      <DependentUpon>employeSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee\employeUpdate.resx">
+      <DependentUpon>employeUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee\employeView.resx">
+      <DependentUpon>employeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee\empSalaryUpdate.resx">
+      <DependentUpon>empSalaryUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loanCalculator.resx">
+      <DependentUpon>loanCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer\modifyCustomer.resx">
+      <DependentUpon>modifyCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="password.resx">
+      <DependentUpon>password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="employee\salary.resx">
+      <DependentUpon>salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer\transaction.resx">
+      <DependentUpon>transaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer\viewCustomer.resx">
+      <DependentUpon>viewCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer\viewCustomerAcc.resx">
+      <DependentUpon>viewCustomerAcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee\viewemployeeInfo.resx">
+      <DependentUpon>viewemployeeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="publicMainForm.resx">
+      <DependentUpon>publicMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewCustomerTransaction.resx">
+      <DependentUpon>viewCustomerTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testForm.resx">
+      <DependentUpon>testForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer\viewCustomerProfileForCustomer.resx">
+      <DependentUpon>viewCustomerProfileForCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer\updateCustomerAccount.resx">
+      <DependentUpon>updateCustomerAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="BankManagement.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BankManagement_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>BankManagement.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
